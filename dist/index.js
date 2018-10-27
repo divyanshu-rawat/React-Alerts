@@ -35,7 +35,7 @@ var Alert = function (_React$Component) {
 
 			var alert = null;
 			var margin = this.props.margin == undefined ? null : parseInt(this.props.margin);
-			var width = this.props.margin == undefined ? null : parseInt(this.props.width);
+			var width = this.props.width == undefined ? null : parseInt(this.props.width);
 			var fontColor = this.props.fontColor == undefined ? null : this.props.fontColor;
 			var backgroundColor = this.props.backgroundColor == undefined ? null : this.props.backgroundColor;
 			var message = this.props.message == undefined ? null : this.props.message;
@@ -60,7 +60,6 @@ var Alert = function (_React$Component) {
 
 			switch (this.props.type) {
 				case 'danger':
-					console.log('IN');
 					alert = _react2.default.createElement(
 						'div',
 						{ className: 'alert alert-danger', style: divStyle },
