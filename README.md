@@ -61,7 +61,7 @@ You can pass the following options as props to ``` <Alert /> ```:
     message: String,
     margin: String,
     width : String,
-    fontColor : String',
+    fontColor : String,
     backgroundColor : String
   }
   
