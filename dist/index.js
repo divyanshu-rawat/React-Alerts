@@ -35,11 +35,10 @@ var Alert = function (_React$Component) {
 
 						var alert = null;
 
-						var margin = parseInt(this.props.margin);
-						var width = parseInt(this.props.width);
-						var fontColor = this.props.fontColor;
-						var backgroundColor = this.props.backgroundColor;
-
+						var margin = this.props.margin == undefined ? null : parseInt(this.props.margin);
+						var width = this.props.margin == undefined ? null : parseInt(this.props.width);
+						var fontColor = this.props.fontColor == undefined ? null : this.props.fontColor;
+						var backgroundColor = this.props.backgroundColor == undefined ? null : this.props.backgroundColor;
 
 						var splitMessage = this.props.message.split(" ");
 						var strongMessage = splitMessage[0];
