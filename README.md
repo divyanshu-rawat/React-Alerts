@@ -7,6 +7,10 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
+### DEMO
+
+* [React-Alerts](http://divyanshurawat.me/react-alerts/)
+
 
 ### Installation:
 
@@ -24,6 +28,14 @@ First you have to wrap your app with the Provider giving it the alert template a
   import React, { Component } from 'react'
   import { render } from 'react-dom'
   import Alert from 'react-alerts-component'
+  
+  const options = {
+    margin: '10',
+    width : "500",
+    fontColor : 'black',
+    backgroundColor : 'grey'
+  }
+
 
   class App extends Component  {
     render () {
@@ -36,3 +48,37 @@ First you have to wrap your app with the Provider giving it the alert template a
   render(<App />, document.getElementById('root'))
 
 ```
+
+
+## Options
+You can pass the following options as props to ``` <Alert /> ```:
+
+```js
+
+
+  const options = {
+    type: String,
+    message: String,
+    margin: String,
+    width : String,
+    fontColor : String',
+    backgroundColor : String
+  }
+  
+```
+
+Values that ``` type ``` can take are as follows:
+
+* default
+* danger
+* warning
+* secondary
+* info
+* success
+* light
+* custom
+
+
+![alt tag](https://github.com/divyanshu-rawat/react-alerts/blob/master/assets/Screen%20Shot%202018-10-28%20at%202.51.39%20AM.png)
+
+
