@@ -1,7 +1,7 @@
 {
-  "name": "react-alerts",
+  "name": "react-alert-component",
   "version": "1.0.0",
-  "description": "",
+  "description": "a react-component that shows alerts",
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
@@ -9,7 +9,7 @@
     "prepublishOnly": "npm run transpile"
   },
   "keywords": ["alerts", "css", "responsive"],
-  "author": "",
+  "author": "divyanshu-rawat",
   "license": "MIT",
   "peerDependencies": {
     "react": "^16.3.0",
