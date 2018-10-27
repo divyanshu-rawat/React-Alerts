@@ -6,6 +6,7 @@ class Alert extends React.Component{
 	render(){
 
 		let alert = null;
+
 		const margin  = parseInt(this.props.margin);
 		const width   = parseInt(this.props.width);
 		const { fontColor } = this.props;
@@ -13,8 +14,8 @@ class Alert extends React.Component{
 
 		const splitMessage  = this.props.message.split(" ");
 		const strongMessage = splitMessage[0];
-		const restMessage = splitMessage.slice(1, splitMessage.length).join(" ");
-
+		const restMessage   = splitMessage.slice(1, splitMessage.length).join(" ");
+	
 		const divStyle = {
 		  margin: margin,
 		  width : width,

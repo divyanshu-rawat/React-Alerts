@@ -4,6 +4,6 @@ import { render} from 'react-dom';
 import Alert from '../../src';
 
 const App = () => (
-    <Alert />
+    <Alert type = "success" message = "Component mounted successfully!!"/>
 );
 render(<App />, document.getElementById("root"));
