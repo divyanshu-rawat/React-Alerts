@@ -7,7 +7,7 @@ class Alert extends React.Component{
 
 		let alert = null;
 		let margin          = this.props.margin == undefined ? null : parseInt(this.props.margin);
-		let width           = this.props.margin == undefined ? null : parseInt(this.props.width);
+		let width           = this.props.width  == undefined ? null : parseInt(this.props.width);
 		let fontColor       = this.props.fontColor == undefined ? null : this.props.fontColor;
 		let backgroundColor = this.props.backgroundColor == undefined ? null : this.props.backgroundColor ;
 		let message         = this.props.message == undefined ? null : this.props.message;
@@ -22,7 +22,7 @@ class Alert extends React.Component{
 			strongMessage  = "Success!"
 			restMessage    = "Component Imported Successfully!!"
 		}	
-	
+
 		let divStyle = {
 		  margin: margin,
 		  width : width,
@@ -32,7 +32,6 @@ class Alert extends React.Component{
 
 		switch (this.props.type) {
 		    case 'danger':
-		    console.log('IN')
 		         alert = (
 			         <div className="alert alert-danger" style = { divStyle }>
 			          <a href="#" className="close" data-dismiss="alert" aria-label="close">×</a>
