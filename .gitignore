@@ -1,2 +1,10 @@
 
-node_modules/
+
+
+# .npmignore
+node_modules/ 
+src
+examples
+.babelrc
+.gitignore
+webpack.config.js
