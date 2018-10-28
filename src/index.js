@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './style.css';
 
 class Alert extends React.Component{
@@ -101,6 +102,26 @@ class Alert extends React.Component{
 		)
 	}
 }
+
+Alert.validTypes = [
+  'default',
+  'danger',
+  'warning',
+  'secondary',
+  'info',
+  'success',
+  'light',
+  'custom'
+];
+
+Alert.propTypes = {
+  type: PropTypes.oneOf(Alert.validTypes),
+  message: PropTypes.string,
+  margin: PropTypes.string,
+  width: PropTypes.string,
+  fontColor: PropTypes.string,
+  backgroundColor: PropTypes.string
+};
 
 
 export default Alert;
