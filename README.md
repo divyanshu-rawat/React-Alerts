@@ -9,7 +9,7 @@
 
 ### DEMO
 
-* [React-Alerts](http://divyanshurawat.me/react-alerts/)
+* [React-Alerts](http://divyanshurawat.me/React-Alerts/)
 
 
 ### Installation:
