@@ -7,11 +7,6 @@ class Alert extends React.Component{
 	render(){
 
 		let alert = null;
-		let margin          = this.props.margin == undefined ? null : parseInt(this.props.margin);
-		let width           = this.props.width  == undefined ? null : parseInt(this.props.width);
-		let fontColor       = this.props.fontColor == undefined ? null : this.props.fontColor;
-		let backgroundColor = this.props.backgroundColor == undefined ? null : this.props.backgroundColor ;
-		let message         = this.props.message == undefined ? null : this.props.message;
 		let restMessage;
 		let strongMessage;
 
@@ -25,10 +20,10 @@ class Alert extends React.Component{
 		}	
 
 		let divStyle = {
-		  margin: margin,
-		  width : width,
-		  color : fontColor,
-		  background : backgroundColor
+		  margin: this.props.margin,
+		  width : this.props.width,
+		  color : this.props.fontColor,
+		  background : this.props.backgroundColor
 		};
 
 		switch (this.props.type) {
@@ -123,5 +118,12 @@ Alert.propTypes = {
   backgroundColor: PropTypes.string
 };
 
+Alert.defaultProps = {
+  margin: null,
+  width: null,
+  fontColor: null,
+  backgroundColor: null,
+  message: null
+};
 
 export default Alert;
