@@ -4,20 +4,24 @@ import PropTypes from 'prop-types';
 import './style.css';
 
 class Alert extends React.Component{
-	render(){
-
-		let alert = null;
+	splitMessage(message){
 		let restMessage;
 		let strongMessage;
 
-		if( this.props.message ){
-			let splitMessage  = this.props.message.split(" ");
+		if ( message ) {
+			let splitMessage  = message.split(" ");
 			strongMessage     = splitMessage[0];
 			restMessage       = splitMessage.slice(1, splitMessage.length).join(" ");
-		}else{
+		} else {
 			strongMessage  = "Success!"
 			restMessage    = "Component Imported Successfully!!"
-		}	
+		}
+		return { restMessage, strongMessage };
+	}
+
+	render(){
+		let alert = null;
+		let { restMessage, strongMessage } = this.splitMessage(this.props.message);
 
 		let divStyle = {
 		  margin: this.props.margin,
